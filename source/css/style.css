@@ -169,7 +169,7 @@ ul, ol {
 	padding: 100px 0;
 	text-align: center;
 	color: #fff;
-	background: url(../img/intro-bg.jpg) no-repeat center center;
+	background: url(../img/intro-bg.jpeg) no-repeat center center;
 	background-color: #000;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -677,7 +677,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 #separator {
 	padding: 300px 0 200px 0;
 	color: #333;
-	background: url(../img/Antarctica/separator);
+	background: url(../img/Antarctica/separator.jpeg);
 	background-size: 100% 100%;
 	background-attachment: fixed;
 }
