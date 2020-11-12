@@ -114,148 +114,159 @@
     </div>
   </div>
 </div>
+
+
+
+
+
 <!-- Separator -->
 <div id="separator">
   <div class="container">
   </div>
 </div>
+
+
+
+
+
 <!-- Research -->
-<div id="research" class="text-center">
+<div id="research">
   <div class="container">
-    <div style="padding-bottom: 0" class="section-title center">
+    <div class="section-title text-center center">
       <h2>Research</h2>
       <hr>
+      <div class="clearfix"></div>
+      <p>Here is a brief explanation of the projects that I work on</p>
     </div>
-  
-    <div class="">
-      <div class="col-sm-12">
-          <div class="page-header" style="margin-top: 0">
-            <h4>The hidden earthquakes of the 2008 Okmok caldera eruption show dynamic opening and closing of the system</h4>
-              Garza-Giron, R., Brodsky, E., Spica, Z. and Haney, M.
-          <div style="color: red">
-            <h4>WORK IN PROGRESS</h4>
+    <div class="categories">
+      <ul class="rcat">
+        <li>
+          <ol class="type">
+            <li><a href="#" data-filter="*" class="active">All</a></li>
+            <li><a href="#" data-filter=".seis">Seismology</a></li>
+            <li><a href="#" data-filter=".volc">Volcanology</a></li>
+            <li><a href="#" data-filter=".em">Electromagnetism</a></li>
+            <li><a href="#" data-filter=".pe">Polar exploration</a></li>
+
+          </ol>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+    <div class="row">
+      <div class="research-items">
+        <div class="col-sm-6 col-md-3 col-lg-3 seis volc">
+          <div class="research-item">
+            <div class="hover-bg">
+              <a href="bvalue.html">
+                <div class="hover-text">
+                  <h4>b-value mapping</h4>
+                  <small>Popocatépetl</small>
+                  <div class="clearfix"></div>
+
+                  </div>
+                <img src="source/research/bvalue_cover.png" class="img-responsive" alt="bvalues" style="width:150%;"> </a> </div>
           </div>
+        </div>
+        
+        
+        <div class="col-sm-6 col-md-3 col-lg-3 seis volc">
+          <div class="research-item" >
+            <div class="hover-bg">
+              <a href="MsAs.html">
+                <div class="hover-text">
+                  <h4>Clustering of EQs in volcanoes</h4>
+                  <small>Japan</small>
+                  </div>
+                <img src="source/research/msas_cover.png" class="img-responsive" alt="Clustering" style="width:150%;"> </a>
+            </div>
           </div>
-      </div>
-      <div class="col-sm-12" >
-        <img class="img-fluid" src="https://ricky-gg.github.io/source/research/eruption_summary.gif" style="margin-left:auto;margin-right:auto; width: 90%;">
-      </div>
-      <div class="col-sm-12">
-        <p></p>
-        <p>
-          We have performed an exhaustive search for earthquakes that are "hidding" in the continuous seismic data of a large volcanic eruption by using both supervised and unsupervised searching algorithms.  
-        </p>
-        <p>
-          The motivation for this project is the need to better understand the response of the solid medium to the rapid changes in the stress-field durting large volcanic eruptions. This is important because it helps us understand the patterns of physical processes that the volcanic ediffices undergo when an euption is ongoing and it puts us in a better possition to say if the eruption will keep evolving or if it is going to stop or what is actually happening inside of the volcano.
-        </p>
-        <p>
-          The search for hidden earthquakes in the data is analogous to using an app to find your favorite song: You click the button and the waveform produced by the sound system playing your song is sent to a searching algorithm that, in a very efficient way, finds the best match. In our case, we used the waveforms of the pre-existing earthquakes during the eruption to search for new ones that look alike (supervised) and also we searched the whole data base to find brand-new earthquakes (unsupervised). 
-          For the supervised search, we used the Template Matching method based on routines from the EQcorrscan Python package (Chamberlain et al., 2014) and for the unsupervised search we applied the FAST (Fingerprinting and Similarity Thresholding) algorithm (Yoon et al., 2015)
-        </p>
-          <p>
-        Besides this, we developed a code that performs a linear inversion to retrieve the attenuation relationship pertaining to the Okmok-Makushin-Akutan seismic network calibrated during the eruptive period to be able to calculate the correct local magnitude of the earthquakes that we have.
-        </p>
-        <p>
-        We are starting to get very interesting results about the development of the eruption including a clog and crack dynamic of closing and opening the system using earthquakes and also the seismic response of the different stages of the eruption which is closely related to the different structures that define the anatomy of Okmok and Unmak island...STAY TUNED FOR OUR PAPER COMING UP SOON! 
-        </p>
-        <p>
-        <a href="https://scits.stanford.edu/fingerprinting-and-similarity-thresholding-fast">Link to FAST algorithm developed at Stanford University</a>
-        </p>
-        <p>
-        <a href="https://github.com/eqcorrscan/EQcorrscan">Link to EQcorrscan Github</a>
-        </p>
-      </div>
-    </div>
-    
-    <div class="">
-      <div class="col-sm-12">
-        <div class="page-header" style="margin-top: 0">
-            <h4>Mainshock-Aftershock Clustering in Volcanic Regions</h4>
-            <h4>Garza-Giron, R., Brodsky, E. and Prejean, S. (2018)</h4>
         </div>
-            <img src="https://ricky-gg.github.io/source/research/MsAs_VolcanicvsNON.svg" style=" width: 90%;">
-        <div class="col-sm-12">
-            <p></p>
-            <p>
-              Active volcanic regions are characterized for having high seismicity rates and heterogeneous stress fields. When there is a transient phenomenon, such as magma or other fluids pushing through the crust, it is expected to see an increase in the number of observed earthquakes. However, observing a burst of seismicity does not always mean that something anomalous is stressing the crust or that an eruption is going to happen. Earthquakes themselves can trigger other earthquakes (aftershocks) by transferring static stress to their surrounding volume or by shaking other regions with the passing of their seismic waves (dynamic stress triggering). 
-            </p>
-            <p>
-              So, how likely is an active volcanic region to produce mainshock-aftershocks sequences versus other type of seismic bursts? Are there any differences in aftershock productivity between volcanic and non-volcanic regions? Answering these type of questions is elemental to understanding the dynamics of earthquakes in areas of high stressing rates and for volcano observatories to be able to discern whether a burst of earthquakes means that an eruption is going to happen or not.
-            </p>
-            <p>
-            We investigate these questions by exploring the <a href="https://www.jma.go.jp/jma/indexe.html">Japan Meteorological Agency</a> (JMA) seismic catalog and designing an algorithm that captures the spatio-temporal clustering of mainshock-aftershocks sequences. The JMA catalog is advantageous in that it provides a homogeneous data set that includes the regions of around 110 active volcanoes, 46 of which are well instrumented and constantly monitored, as well as regions where no volcanism is observed.
-            </p>
-            <p>
-            We find that volcanic regions produce aftershocks as often as non-volcanic regions and at a similar or higher rate. This finding might point towards the possibility that aftershock productivity in the shallow crust is controlled by similar mechanisms despite of the forcing in the system. Also, we were able to find interesting differences in aftershock behavior for a volcano with a large-scale eruption (Miyakejima) and the volcanoes in its vicinity. Miyakejima is a system that does not favor MsAs sequences, whereas its neighbors showed a very high increase in productivity when being “pushed” by the dike propagating from Miyake.
-            </p>
-            <p>
-              <b><a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2017GL075738?casa_token=fzcjCCXvzawAAAAA%3AEewZeMMzsoJKmNHhxEOLlr6WiTWw5x_i3GmhPanRDsE6pfMgtHgNWDpoKE3jUx7dLhdh1MWccWKKuhcI">FOR MORE DETAILS ON THIS TOPIC PLEASE CLICK HERE</a></b>
-            </p>
-            <p>
-            <a href="https://www.data.jma.go.jp/svd/vois/data/tokyo/STOCK/souran_eng/menu.htm">Link to the National Catalogue of the Active Volcanoes in Japan</a>
-            </p>
+        
+        
+        <div class="col-sm-6 col-md-3 col-lg-3 em pe">
+          <div class="research-item">
+            <div class="hover-bg">
+              <a href="slides_Antarctica.html">
+                <div class="hover-text">
+                  <h4>Geothermal heat flux</h4>
+                  <small>Antarctica</small>
+                  <p></p>
+                  </div>
+                <img src="source/research/GHF_cover.png" class="img-responsive" alt="GHF" style="width:95%;"> </a> </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <br>
-    <br>
-    <!-- start of popocateptl-->
-    <div class="">
-      <div class="col-sm-12">
-        <div class="page-header" style="margin-top: 0">
-          <h4>Spatial variations of b-values under Popocatepetl volcano and its relation with the magmatic system</h4>
-          <h4>Garza-Giron, R. and Zuñiga, FR. (2014)</h4>
+        
+        <div class="col-sm-6 col-md-3 col-lg-3 seis volc">
+          <div class="research-item">
+            <div class="hover-bg">
+              <a href="Okmok.html">
+                <div class="hover-text">
+                  <h4>The hidden earthquakes of a large volcanic eruption</h4>
+                  <small>Okmok, Aleutian Islands</small>
+                  <p></p>
+                  </div>
+                <img src="source/research/Okmok_cover.png" class="img-responsive" alt="Template Matching" style="width:95%;"> </a> </div>
+          </div>
         </div>
-        <img src="https://ricky-gg.github.io/source/research/Popo_research.png" style="width: 90%;"/>
-        <div class="col-sm-12">
-          <p></p>
-          <p>
-            Besides being broadly used for earthquake hazard assessment, statistical seismology provides a way to explore the changes in the stress field of Earth's crust. In this work we explore the capabilities of mapping the spatial variation of b-values, the slope of the frequency-magnitude cumulative distribution of occurence of earthquakes, in Popocatepetl volcano. The b-values calculated in this work are relative to the duration magnitude estimated for the detected earthquakes in Popo since 1994. In this sense, b-values in this work are only to be compared with each other and they bare no meaning when compared to b-values estimated for catalogs from other parts in the world. We interpret high b-value anomalies as volumes of high stress regimes that are possibly related to the movement of pressurized fluids through the piping system of the volcano or to high thermal gradients present in the vecinity of magmatic bodies.   
-          </p>
-          <p>
-            A 3-D b-value tomography under Popocatepetl highlights three main areas of high stress or high heterogeneity: One towards the north flank of the volcano, the second directly underneath the vent and a third, and largest, one to the southeast.
-            Using the results from previous geophysical and geological studies we interpret these anomalies as follows: The anomaly to the north is likely reflecting a high heterogeneity region caused by the collapse of the older volcano Nexpayantla and the load of the overlying current ediffice. The anomaly underneath the vent shows the highly stressed active conduit of Popocatepelt, which is possibly a network of interconnected fractures ("pipes") that serve as the pathway for fluids to the summit. The third and largest anomaly correlates with a low-velocity zone from a previous work (see Figure 9 of <a href="https://www.sciencedirect.com/science/article/pii/S0377027311000035"> Berger et al., 2011</a>) and is interpreted as one of the most extensive magma reservoirs of Popo. The volume and depths of this reserviour are in agreement with other gophysical anomalies found at other large stratovolcanoes in the world and that were interpreted as a magma chamber.
-          </p>
-          <p>
-            <b>FOR MORE DETAILS ON THIS TOPIC PLEASE CLICK BELOW ON MY PUBLISHED UNDERGRADUATE THESIS (EN ESPAÑOL! But with cool plots and theory on volcano seismology. SORRY...maybe I will translate it to English one day)</b>
-          </p>
+        
       </div>
     </div>
   </div>
- <!-- end of popocateptl -->   
 </div>
+
+  </div>
 </div>
- <!-- end of research-->   
+
 <!-- Publications Section --> 
   <div class="container">
     <div class="section-title center text-center" style="padding-bottom: 0">
       <h2>Publications</h2>
       <hr>
     </div>
-    <div class="">
+    
+      <div class="">
       <div class="col-sm-12">
         <ul class="achievement-box showlist">
-          <li style="margin:10px"><b>R. Garza-Giron</b>, Emily Brodsky, Stephanie Prejean.
-            <b>Mainshock-Aftershock Clustering in Volcanic Regions</b>.
-            In <i> Geophysical Research Letters, 45(3), 1370-1378 </i>, 2018
-            [<a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2017GL075738?casa_token=fzcjCCXvzawAAAAA%3AEewZeMMzsoJKmNHhxEOLlr6WiTWw5x_i3GmhPanRDsE6pfMgtHgNWDpoKE3jUx7dLhdh1MWccWKKuhcI">link</a>]
-          </li>
-        </ul>
-      </div>
-    </div>
-       <div class="">
-      <div class="col-sm-12">
-        <ul class="achievement-box showlist">
-          <li style="margin:10px"><b>R. Garza-Giron</b>, FR. Zuñiga
+          <li style="margin:10px"><b>R. Garza-Giron</b>, FR. Zuñiga. (2014)
             <b>Distribución espacial del valor b debajo del Volcán Popocatépetl y su relación con la estructura de la cámara magmática</b>.
-            (Tesis de licenciatura) en<i> Universidad Nacional Autónoma de México, México. Recuperado de https://repositorio.unam.mx/contenidos/428928 </i>, 2014
+            (Tesis de licenciatura) en<i> Universidad Nacional Autónoma de México, México. Recuperado de https://repositorio.unam.mx/contenidos/428928 </i>
             [<a href="https://repositorio.unam.mx/contenidos/distribucion-espacial-del-valor-b-debajo-del-volcan-popocatepetl-y-su-relacion-con-la-estructura-de-la-camara-magmatic-428928?c=pQ8wXB&d=false&q=Ricardo%20Garza%20Giron&i=1&v=0&t=search_0&as=0">link</a>]
           </li>
         </ul>
       </div>
     </div>
+    
+    <div class="">
+      <div class="col-sm-12">
+        <ul class="achievement-box showlist">
+          <li style="margin:10px"><b>Garza‐Giron, R.</b>, Brodsky, E. E., & Prejean, S. G. (2018). Mainshock‐Aftershock Clustering in Volcanic Regions. Geophysical Research Letters, 45(3), 1370-1378.
+            [<a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2017GL075738?casa_token=fzcjCCXvzawAAAAA%3AEewZeMMzsoJKmNHhxEOLlr6WiTWw5x_i3GmhPanRDsE6pfMgtHgNWDpoKE3jUx7dLhdh1MWccWKKuhcI">link</a>]
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="">
+      <div class="col-sm-12">
+        <ul class="achievement-box showlist">
+          <li style="margin:10px">Cruz-Atienza,V.,Tago,J.,Villafuerte,C.,Wei,M.,<b>​Garza-Girón,R.</b>​,Dominguez,L.,...&Santoyo,M.<b>Short-Term Interaction between Silent and Devastating Earthquakes in Mexico</b>.Nature Communications.<i>​InReview​</i>. 
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="">
+      <div class="col-sm-12">
+        <ul class="achievement-box showlist">
+          <li style="margin:10px">Denys Grombacher,Esben Auken,Nikolaj Foged,Thue Bording,Neil Foley,Peter T. Doran,Jill Mikucki,Hilary A. Dugan,<b>​Ricardo Garza-Giron</b>​,Krista Myers,Ross A. Virginia, and Slawek Tulaczyk.<b>Induced polarization effects in airborne transient electromagnetic data collected in the McMurdo Dry Valleys,Antarctica</b>.Geophysical Journal International.<i>​InReview</i>​.
+          </li>
+        </ul>
+      </div>
+    </div>
+    
   </div>
-  
+
 <!-- Field Work Section -->
 <div id="field">
   <div class="container">
@@ -263,23 +274,28 @@
       <h2>Field work</h2>
       <hr>
       <div class="clearfix"></div>
-      <p>Here is a list/gallery of the field work that I have done for different projects </p>
+      <p1>Here is a list/gallery of the field work that I have done for different projects </p1>
     </div>
     <div class="categories">
       <ul class="cat">
         <li>
           <ol class="type">
             <li><a href="#" data-filter="*" class="active">All</a></li>
-            <li><a href="#" data-filter=".em">Electro-Magnetism</a></li>
             <li><a href="#" data-filter=".seis">Seismology</a></li>
+            <li><a href="#" data-filter=".em">Electromagnetism</a></li>
           </ol>
         </li>
       </ul>
       <div class="clearfix"></div>
-    </div>
-    <div class="">
+    </div>  
+  
+  
+    <div class="row">
+    
+    
       <div class="field-items">
-        <div class="col-sm-6 col-sm-3 col-sm-3 em">
+      
+        <div class="col-sm-6 col-md-3 col-lg-3 em">
           <div class="field-item">
             <div class="hover-bg">
               <a href="slides_Popo.html">
@@ -289,14 +305,13 @@
                   <p></p>
                   <small>2014</small>
                   <div class="clearfix"></div>
-
                   </div>
                 <img src="source/img/field_work/popo_cover" class="img-responsive" alt="Popocatépetl" style="width:95%;"> </a> </div>
           </div>
         </div>
         
         
-        <div class="col-sm-6 col-sm-3 col-sm-3 seis">
+        <div class="col-sm-6 col-md-3 col-lg-3 seis">
           <div class="field-item">
             <div class="hover-bg">
               <a href="slides_Oklahoma.html">
@@ -312,7 +327,7 @@
         </div>
         
         
-       <div class="col-sm-6 col-sm-3 col-sm-3 seis">
+       <div class="col-sm-6 col-md-3 col-lg-3 seis">
           <div class="field-item">
             <div class="hover-bg">
               <a href="slides_Cook_Inlet.html">
@@ -328,7 +343,7 @@
         </div>   
         
         
-        <div class="col-sm-6 col-sm-3 col-sm-3 em">
+        <div class="col-sm-6 col-md-3 col-lg-3 em">
           <div class="field-item">
             <div class="hover-bg">
               <a href="slides_Antarctica.html">
@@ -361,7 +376,7 @@
       <h3>Get in touch!</h3>
       <div class="social">
         <ul>
-              <li><a href="https://github.com/ricky-garzagiron" target="_blank"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://github.com/ricky-gg" target="_blank"><i class="fa fa-github"></i></a></li>
               <li><a href="https://www.linkedin.com/in/ricardo-garza-girón-b3492155" target="_blank"><i class="fa fa-linkedin"></i></a></li>
               <li><a href="https://www.instagram.com/rickygato" target="_blank"><i class="fa fa-instagram"></i></a></li>
               <li><a href="mailto:rgarzagi@ucsc.edu" target="_blank"><i class="fa fa-envelope"></i></a></li>
@@ -403,20 +418,19 @@
     </div>
   </div>
 </div>
+
 <script type="text/javascript" src="source/js/jquery.1.11.1.js"></script>
 <script type="text/javascript" src="source/js/bootstrap.js"></script>
 <script type="text/javascript" src="source/js/SmoothScroll.js"></script>
-<!--
 <script type="text/javascript" src="source/js/easypiechart.js"></script>
 <script type="text/javascript" src="source/js/jquery.prettyPhoto.js"></script>
 <script type="text/javascript" src="source/js/jquery.isotope.js"></script>
 <script type="text/javascript" src="source/js/jquery.counterup.js"></script>
-<script type="text/javascript" src="source/3d-smooth-carousel-slider/js/index.js"></script>
 <script type="text/javascript" src="source/js/waypoints.js"></script>
 <script type="text/javascript" src="source/js/jqBootstrapValidation.js"></script>
 <script type="text/javascript" src="source/js/owl.carousel.js"></script>
 <script type="text/javascript" src="source/js/main.js"></script>
--->
+<script type="text/javascript" src="source/3d-smooth-carousel-slider/js/index.js"></script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154864825-1"></script>

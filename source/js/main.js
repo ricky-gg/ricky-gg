@@ -59,9 +59,9 @@ $('#nav').affix({
 	});
 
 
-  	// Portfolio isotope filter
+  	// Field isotope filter
     $(window).load(function() {
-        var $container = $('.portfolio-items');
+        var $container = $('.field-items');
         $container.isotope({
             filter: '*',
             animationOptions: {
@@ -72,6 +72,34 @@ $('#nav').affix({
         });
         $('.cat a').click(function() {
             $('.cat .active').removeClass('active');
+            $(this).addClass('active');
+            var selector = $(this).attr('data-filter');
+            $container.isotope({
+                filter: selector,
+                animationOptions: {
+                    duration: 750,
+                    easing: 'linear',
+                    queue: false
+                }
+            });
+            return false;
+        });
+
+    });
+    
+     	// Research isotope filter
+    $(window).load(function() {
+        var $container = $('.research-items');
+        $container.isotope({
+            filter: '*',
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+        });
+        $('.rcat a').click(function() {
+            $('.rcat .active').removeClass('active');
             $(this).addClass('active');
             var selector = $(this).attr('data-filter');
             $container.isotope({
