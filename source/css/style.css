@@ -4,8 +4,8 @@ body, html {
 	-webkit-font-smoothing: antialiased !important;
 	/*color: #616e7c;*/
 	width: 100% !important;
-	height: 100% !important;
-	touch-action: none;
+	/*height: 100% !important;*/
+	/*touch-action: none;*/
 }
 h1 {
 	font-weight: 700;
@@ -254,7 +254,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 #about img {
   display: block;
 	border-radius: 10%;
-	width: 250px;
+	width: 350px;
 	height: 350px;
 	display: inline-block;
 
@@ -386,7 +386,7 @@ ol.type li a:hover {
 	color: #ffffff;
 	background: rgba(0, 0, 0, 0.5);
 	padding: 25% 0;
-	height: 100%;
+	/*height: 100%;*/
 	width: 100%;
 	opacity: 0;
 	transition: all 0.5s;
@@ -684,7 +684,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 /* Media Queries */
 @media(min-width:768px) {
 .intro {
-	height: 100%;
+	/*height: 100%;*/
 	padding: 0;
 	text-align: left;
 }
