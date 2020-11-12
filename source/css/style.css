@@ -254,8 +254,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 #about img {
   display: block;
 	border-radius: 10%;
-	width: 350px;
-	height: 350px;
+	width: 450px;
+	height: 450px;
 	display: inline-block;
 
 }
