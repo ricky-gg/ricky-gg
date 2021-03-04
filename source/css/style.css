@@ -26,6 +26,7 @@ h3 {
 h4 {
 	font-size: 25px;
 	font-weight: 700;
+    color=#FFFFFF;
 }
 h5 {
 	text-transform: uppercase;
@@ -49,7 +50,7 @@ a {
 }
 
 a:hover, a:focus {
-	color: #E87E04;
+	color: #DF01D7;
     text-decoration: underline
 }
 ul, ol {
@@ -148,19 +149,21 @@ ul, ol {
 	background-color: transparent;
 	border-color: transparent;
 }
+
 .btn-primary {
 	color: #76818d;
-	background-color: #fff;
-	border-color: #76818d;
+	background-color: #000000;
+	border-color: #000000;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active {
 	color: #eee;
-	background-color: rgb(48,29,74);
+	background-color: #000000;
 	border-color: #2c3e50;
 }
 .btn-primary i.fa {
 	margin-right: 10px;
 }
+
 /* Home */
 .intro {
 	display: table;
@@ -782,8 +785,8 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin-top: 10px;
 }
 
-/* Separator */
 
+/* Separator */
 #separator {
 	padding: 300px 0 200px 0;
 	color: #333;
